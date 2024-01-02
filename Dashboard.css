@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: none;
+outline: none;
+box-sizing: border-box;
+}
+
+
+
+body{
+display: flex;
+font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+position: sticky;
+top: 0;
+left: 0;
+bottom: 0;
+width: 100px;
+height: 100vh;
+padding: 0 1.7rem;
+color: white;
+overflow: hidden;
+/* transition: all 0.5s linear; */
+/* background: rgba(113,99,186,285); */
+background: black;
+
+}
+.sidebar span {
+display: none;
+}
+.sidebar:hover{
+width: 400px;
+padding:  1.7rem;
+display: block;
+}
+
+.sidebar:hover .logo{
+margin-top: -40px !important;
+margin-left: -30px;
+}
+.sidebar:hover span{
+display: block;
+color: white;
+}
+.logo{
+height: 80px;
+padding: 16px;
+margin-left: -30px;
+margin-top: -20px;
+}
+.menu{
+height: 88%;
+position: relative;
+list-style: none;
+padding: 0;
+}
+.menu li{
+padding: 0.5rem;
+margin: 8px 0;
+border-radius: 8px;
+}
+/* .menu li:hover,
+.active{
+background: #e0e0e058;
+} */
+
+ul.submenu li {
+display: block;
+margin-left: 50px;
+}
+ul.submenu li{
+gap: 0 !important;
+padding: 0 !important;
+}
+.menu a{
+color: #fff;
+font-size: 14px;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 1.5rem;
+}
+.menu a span{
+overflow: hidden;
+font-weight: 600;
+font-size: 0.9rem;
+}
+.menu a i {
+font-size: 1.2rem;
+}
+.logout{
+position: absolute;
+}
+
+.main--content{
+position: relative;
+color: white;
+width: 100%;
+}
+.header--wrapper img{
+width: 50%;
+height: 50px;
+cursor: pointer;
+}
+.header--wrapper{
+display: flex;
+justify-content: space-between !important;
+align-items: center;
+flex-wrap: wrap;
+background-color: black;
+color: white;
+padding: 10px 2rem;
+margin-bottom: 1rem;
+}
+
+.icons span {
+padding: 10px;
+}
+.header-title{
+color: white;
+}
+.user--info{
+display: flex;
+align-items: center;
+gap: 1;
+}
+.user--info .icons{
+margin-right: 2rem;
+
+}
+.snow-dream-studios{
+border-radius: 15px;
+align-items: center;
+align-items: flex-end;
+gap: 5px;
+padding: 4px 12px;
+
+}
+.snow-dream-studios .admin{
+margin-left: 70px;
+align-items: flex-end;
+font-size: 12px;
+}
+.snow-dream-studios span{
+margin-top: 0;
+font-size: 12px;
+font-weight: bold;
+}
+
+.dashboard-profile-icon .fas{
+padding: 10px;
+background-color: white;
+color: black;
+border-radius: 50%;
+font-size: 1rem;
+}
+
+ul.submenu{
+display: none;
+}
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 550px) {
+.sidebar {
+  display: none ;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

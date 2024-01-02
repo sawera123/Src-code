@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Dream Dashboard </title>
+    <!-- css style sheet link  -->
+    <link rel="stylesheet" href="Dashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Google font link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="logo.png" alt="profile" width="100px"/>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Accounts</span>
+          </a>
+        </li>
+
+
+        <li id="Em">
+          <a href="#">
+            <i class="fa-solid fa-user-gear"></i>
+            <span>Employee Management</span>
+
+            <ul class="submenu">
+              <li><a href="#">- Attendance</a></li>
+              <li><a href="#">- Employees</a></li>
+              <li><a href="#">- Departments</a></li>
+              <!-- Add more submenu items as needed -->
+            </ul>
+          </a>
+        </li>
+
+        
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-file-circle-check"></i>
+            <span>Project Management</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fas fa-user"></i>
+            <span>User Management</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-rocketchat"></i>
+            <span>Chat</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-trash"></i>
+            <span>Trash</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="main--content">
+      <div class="header--wrapper">
+        <div class="header-title">
+          <h3>Dashboard</h3>
+        </div>
+        <div class="user--info">
+          <div class="icons">
+            <span> <i class="fa-solid fa-bell"></i></span> 
+          <span>  <i class="fa-regular fa-envelope"></i></span> 
+          </div>
+          <div class="snow-dream-studios">
+            <span>Snow Dream Studios</span>  
+            <br>
+            <p class="admin"> Admin</p>
+          </div>
+          <div class="dashboard-profile-icon">
+          <i class="fas fa-user"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+<!-- javascript to show submenu on hover -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var emItem = document.getElementById("Em");
+    var submenu = emItem.querySelector(".submenu");
+
+    emItem.addEventListener("mouseover", function () {
+      submenu.style.display = "block";
+    });
+
+    emItem.addEventListener("mouseout", function () {
+      submenu.style.display = "none";
+    });
+  });
+ 
+</script>
+
+
+  </body>
+  </html>
